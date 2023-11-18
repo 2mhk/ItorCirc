@@ -1,18 +1,25 @@
 # ItorCirc
 warpper to make erasing iterator in C++  circulation easier
 
+## Notes
+No more crash will be caused by ItorCirc.
+
+But still be careful with the iterator by what it will be in the next cycle.
 
 
+## Examples
 
-Sample:
+Here is a simple example to show you how to use.
 
+Beside the example below, you can find advance using in sample.cpp.
 
+```cpp
 #include "ItorCirc.h"
 #include <vector>
 
 void main()
 {
-	std::vector<int> vecData = { 1,2,3,4,5,6,7,8,9,10 };
+    std::vector<int> vecData = { 1,2,3,4,5,6,7,8,9,10 };
     for (ItorCirc<decltype(vecData)> itor_vecData(vecData); !itor_vecData.isEnd(); itor_vecData.fetch_add())
     {
         int data = *itor_vecData.get_Iterator();
@@ -22,3 +29,8 @@ void main()
         }
     }
 }
+```
+
+
+
+
