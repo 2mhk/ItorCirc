@@ -4,7 +4,7 @@
 
 void main()
 {
-	std::vector<int> vecData = { 1,2,3,4,5,6,7,8,9,10 };
+    std::vector<int> vecData = { 1,2,3,4,5,6,7,8,9,10 };
     std::cout << "before delete : " << std::endl;
     for (auto item : vecData) { std::cout << item << " "; }		//  1 2 3 4 5 6 7 8 9 10
     std::cout << std::endl;
@@ -13,7 +13,7 @@ void main()
         int data = *itor_vecData.get_Iterator();
 
         if (data == 6) {
-			std::cout << "before delete, \n current iterator : " << itor_vecData.get_Iterator() - vecData.begin() << "  current data : " << *itor_vecData.get_Iterator() << std::endl;
+            std::cout << "before delete, \n current iterator : " << itor_vecData.get_Iterator() - vecData.begin() << "  current data : " << *itor_vecData.get_Iterator() << std::endl;
             //basic use
             itor_vecData.erase(itor_vecData.get_Iterator()); //or itor_vecData.erase_current();
             std::cout << "after erase_current() \n next iterator : " << itor_vecData.get_Iterator() - vecData.begin() << "  next data : " << *itor_vecData.get_Iterator() << std::endl;
