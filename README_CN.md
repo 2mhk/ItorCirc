@@ -1,5 +1,5 @@
 # ItorCirc
-一个简单的warpper，使c++循环中的迭代器erase更容易
+一个简单的封装，使c++循环中的迭代器erase更容易
 
 ## 说明
 ItorCirc使迭代器在循环中删除时不会再造成崩溃。
