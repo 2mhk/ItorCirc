@@ -1,5 +1,5 @@
 # ItorCirc
-warpper to make erasing iterator in C++  circulation easier
+wrapper to make erasing iterator in C++  circulation easier
 
 ## Notes
 No more crash will be caused by ItorCirc.
